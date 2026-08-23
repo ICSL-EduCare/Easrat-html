@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML API Examples</title>
+</head>
+
+<body>
+
+    <div style="text-align: center;">
+
+        <button onclick="playPause()">Play/Pause</button>
+
+        <br><br>
+
+        <video id="video1" width="420" controls>
+            <source src="img/Beige Brown Illustration Minimalist Thanks For Watching Youtube Outro.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused) {
+                myVideo.play();
+            } else {
+                myVideo.pause();
+            }
+        }
+    </script>
+
+    <h1>Getting Server Updates</h1>
+
+    <div id="serverResult"></div>
+
+    <script>
+        const serverResult = document.getElementById("serverResult");
+
+        if (typeof(EventSource) !== "undefined") {
+            var source = new EventSource("demo_sse.php");
+
+            source.onmessage = function(event) {
+                serverResult.innerHTML += event.data + "<br>";
+            };
+        } else {
+            serverResult.innerHTML =
+                "Sorry, no support for server-sent events.";
+        }
+    </script>
+
+    <h1>Web Worker API</h1>
+
+    <p>Count numbers: <output id="workerResult"></output></p>
+
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+
+    <script>
+        let w;
+
+        function startWorker() {
+            const workerResult = document.getElementById("workerResult");
+
+            if (typeof(Worker) !== "undefined") {
+                if (typeof(w) == "undefined") {
+                    w = new Worker("demo_workers.js");
+                }
+
+                w.onmessage = function(event) {
+                    workerResult.innerHTML = event.data;
+                };
+            } else {
+                workerResult.innerHTML = "Sorry! No Web Worker support.";
+            }
+        }
+
+        function stopWorker() {
+            if (w) {
+                w.terminate();
+                w = undefined;
+            }
+        }
+    </script>
+
+    <h1>Drag and Drop API</h1>
+
+    <p>Drag Oggy image into the rectangle:</p>
+
+    <div id="div1"
+        ondrop="dropHandler(event)"
+        ondragover="dragoverHandler(event)"
+        style="width: 350px; height: 350px; padding: 10px; border: 1px solid #aaaaaa;">
+    </div>
+
+    <br>
+
+    <img id="img1"
+        src="img/images.jpeg"
+        draggable="true"
+        ondragstart="dragstartHandler(event)"
+        width="330"
+        height="330"
+        alt="Oggy">
+
+    <script>
+        function dragstartHandler(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function dragoverHandler(ev) {
+            ev.preventDefault();
+        }
+
+        function dropHandler(ev) {
+            ev.preventDefault();
+
+            const data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+    <h1>HTML Geolocation</h1>
+
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="locationResult"></p>
+
+    <script>
+        const locationResult = document.getElementById("locationResult");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(success, error);
+            } else {
+                locationResult.innerHTML =
+                    "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function success(position) {
+            locationResult.innerHTML =
+                "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+
+        function error() {
+            alert("Sorry, no position available.");
+        }
+    </script>
+
+    <h1>Audio</h1>
+
+    <audio controls>
+        <source src="img/Beige Brown Illustration Minimalist Thanks For Watching Youtube Outro.mp4" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+
+    <br>
+
+    <iframe
+        width="420"
+        height="745"
+        src="https://www.youtube.com/embed/HGwzmPstsEc"
+        title="YouTube Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <h1>Plug-ins</h1>
+
+    <object width="100%" height="500px" data="img/images.jpeg"></object>
+
+    <h1>Browser Test for Web Storage API</h1>
+
+    <div id="storageResult"></div>
+
+    <script>
+        const storageResult = document.getElementById("storageResult");
+
+        if (typeof(Storage) !== "undefined") {
+            storageResult.innerHTML =
+                "Your browser supports Web storage!";
+        } else {
+            storageResult.innerHTML =
+                "Sorry, no Web storage support!";
+        }
+    </script>
+
+</body>
+
+</html>
