@@ -2,28 +2,36 @@
 <html>
 <head>
 <style>
-p {
-  white-space: nowrap;
+h1 {
+  text-shadow: 2px 2px;
+}
+h2 {
+  text-shadow: 2px 2px red;
+}
+h3 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;
+}
+h4 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+h5 {
+  text-shadow: 0 0 3px #FF0000;
+}
+h6 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 </style>
 </head>
 <body>
 
-<h1>Using white-space</h1>
-
-<p>
-This is some text that will not wrap.
-This is some text that will not wrap.
-This is some text that will not wrap.
-This is some text that will not wrap.
-This is some text that will not wrap.
-This is some text that will not wrap.
-This is some text that will not wrap.
-This is some text that will not wrap.
-This is some text that will not wrap.
-</p>
-
-<p>Try to remove the white-space property to see the difference!</p>
+<h1>Text-shadow effect!</h1>
+<h2>Text-shadow effect!</h2>
+<h3>Text-shadow effect!</h3>
+<h4>Text-shadow effect!</h4>
+<h5>Text-shadow effect!</h5>
+<h6>Text-shadow effect!</h6>
 
 </body>
 </html>
