@@ -9,17 +9,17 @@ p {
 
 p.ex1 {
   outline-style: solid;
-  outline-color: rgb(187, 187, 187); /* grey */
+  outline-color: hsl(0, 0%, 73%); /* grey */
 }
 
 p.ex2 {
   outline-style: dotted;
-  outline-color: rgb(0, 0, 255); /* blue */
+  outline-color: hsl(240, 100%, 50%); /* blue */
 }
 
 p.ex3 {
   outline-style: outset;
-  outline-color: rgb(255, 0, 0); /* red */
+  outline-color: hsl(0, 100%, 50%); /* red */
 }
 
 </style>
