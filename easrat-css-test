@@ -3,34 +3,23 @@
 <head>
 <style>
 p {
-  border: 1px solid black;
   padding: 5px;
 }
 
-p.ex1 {
-  outline-style: solid;
-  outline-color: hsl(0, 0%, 73%); /* grey */
-}
-
-p.ex2 {
-  outline-style: dotted;
-  outline-color: hsl(240, 100%, 50%); /* blue */
-}
-
-p.ex3 {
-  outline-style: outset;
-  outline-color: hsl(0, 100%, 50%); /* red */
-}
-
+p.ex1 {outline: dashed;}
+p.ex2 {outline: dotted red;}
+p.ex3 {outline: 7px solid yellow;}
+p.ex4 {outline: thick ridge pink;}
 </style>
 </head>
 <body>
 
-<h2>The outline-color Property</h2>
+<h2>The outline shorthand Property</h2>
 
-<p class="ex1">A solid grey outline.</p>
-<p class="ex2">A dotted blue outline.</p>
-<p class="ex3">An outset red outline.</p>
+<p class="ex1">A dashed outline.</p>
+<p class="ex2">A dotted red outline.</p>
+<p class="ex3">A 7px solid yellow outline.</p>
+<p class="ex4">A thick ridge pink outline.</p>
 
 </body>
 </html>
