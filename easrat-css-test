@@ -4,7 +4,7 @@
 <style>
 div {
   border: 1px solid black;
-  padding: 25px 50px;
+  padding: 25px;
   background-color: lightblue;
 }
 </style>
