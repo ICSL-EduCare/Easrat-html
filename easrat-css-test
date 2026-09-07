@@ -2,60 +2,45 @@
 <html>
 <head>
 <style>
-h1 {
-  text-align: center;
+img.a {
+  vertical-align: baseline;
 }
 
-h2 {
-  text-align: left;
+img.b {
+  vertical-align: text-top;
 }
 
-h3 {
-  text-align: right;
-}
-</style>
-</head>
-<body>
-
-<h1>Heading 1 (center)</h1>
-<h2>Heading 2 (left)</h2>
-<h3>Heading 3 (right)</h3>
-
-<p>The three headings above are aligned center, left and right.</p>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-p.a {
-  text-align-last: right;
+img.c {
+  vertical-align: text-bottom;
 }
 
-p.b {
-  text-align-last: center;
+img.d {
+  vertical-align: sub;
 }
 
-p.c {
-  text-align-last: justify;
+img.e {
+  vertical-align: super;
 }
 </style>
 </head>
 <body>
 
-<h1>The text-align-last Property</h1>
+<h1>The vertical-align Property</h1>
 
-<h2>text-align-last: right:</h2>
-<p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+<h2>vertical-align: baseline (default):</h2>
+<p>Align the orange square to baseline: <img class="a" src="sqorange.gif" width="9" height="9"></p> 
 
-<h2>text-align-last: center:</h2>
-<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+<h2>vertical-align: text-top:</h2>
+<p>Align the orange square to text-top: <img class="b" src="sqorange.gif" width="9" height="9"></p> 
 
-<h2>text-align-last: justify:</h2>
-<p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+<h2>vertical-align: text-bottom:</h2>
+<p>Align the orange square to text-bottom: <img class="c" src="sqorange.gif" width="9" height="9"></p> 
+
+<h2>vertical-align: sub:</h2>
+<p>Align the orange square to sub: <img class="d" src="sqorange.gif" width="9" height="9"></p> 
+
+<h2>vertical-align: sup:</h2>
+<p>Align the orange square to super: <img class="e" src="sqorange.gif" width="9" height="9"></p> 
 
 </body>
 </html>
