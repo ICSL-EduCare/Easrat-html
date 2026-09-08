@@ -2,18 +2,36 @@
 <html>
 <head>
 <style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #333333;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
 }
 </style>
 </head>
 <body>
-
-<h2>Basic CSS for Navbar</h2>
-
-<p>We remove the bullet points from the list, and resets its default padding and margin.</p>
 
 <ul>
   <li><a href="#home">Home</a></li>
@@ -21,6 +39,10 @@ ul {
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
+
+<h2>Horizontal Navbar Using Flex</h2>
+
+<p>Some text on the website.</p>
 
 </body>
 </html>
