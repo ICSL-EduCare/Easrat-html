@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Google Icons</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
 <body>
 
-<h1>Google icon library</h1>
+<h2>The cursor Property</h2>
 
-<p>Some Google icons:</p>
-<i class="material-icons">cloud</i>
-<i class="material-icons">favorite</i>
-<i class="material-icons">attachment</i>
-<i class="material-icons">computer</i>
-<i class="material-icons">traffic</i>
-<br><br>
-
-<p>Styled Google icons (size and color):</p>
-<i class="material-icons" style="font-size:24px;">cloud</i>
-<i class="material-icons" style="font-size:36px;">cloud</i>
-<i class="material-icons" style="font-size:48px;color:red;">cloud</i>
-<i class="material-icons" style="font-size:60px;color:lightblue;">cloud</i>
+<p>Mouse over the words to change the cursor.</p>
+<span style="cursor:auto">auto</span><br>
+<span style="cursor:crosshair">crosshair</span><br>
+<span style="cursor:default">default</span><br>
+<span style="cursor:e-resize">e-resize</span><br>
+<span style="cursor:help">help</span><br>
+<span style="cursor:move">move</span><br>
+<span style="cursor:n-resize">n-resize</span><br>
+<span style="cursor:ne-resize">ne-resize</span><br>
+<span style="cursor:nw-resize">nw-resize</span><br>
+<span style="cursor:pointer">pointer</span><br>
+<span style="cursor:progress">progress</span><br>
+<span style="cursor:s-resize">s-resize</span><br>
+<span style="cursor:se-resize">se-resize</span><br>
+<span style="cursor:sw-resize">sw-resize</span><br>
+<span style="cursor:text">text</span><br>
+<span style="cursor:w-resize">w-resize</span><br>
+<span style="cursor:wait">wait</span><br>
 
 </body>
 </html>
