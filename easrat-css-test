@@ -2,89 +2,69 @@
 <html>
 <head>
 <style>
-div.tablecontainer {
-  overflow-x: auto;
+p {
+  background-color: blue;
+  padding: 10px;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
+span {
+  background-color: red;
+  color: white;
+  padding: 10px;
 }
 
-table, th, td {
-   border: 1px solid #ddd;
-   padding: 8px;
-   text-align: left;
-}
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+p.ex5 {display: flex;}
+p.ex6 {display: grid;}
 </style>
 </head>
 <body>
+<h1>The display Property</h1>
 
-<h2>Responsive Table</h2>
-<p>A responsive table will display a horizontal scroll bar if the screen is too 
-small to display the full content. Resize the browser window to see the effect:</p>
-<p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the table element:</p>
+<h2>display: none:</h2>
+<p class="ex1">
+  <span>Text 1</span>
+  <span>Text 2</span>
+  <span>Text 3</span>
+</p>
 
-<div class="tablecontainer">
-  <table>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>Adam</td>
-      <td>Johnson</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-    </tr>
-  </table>
-</div>
+<h2>display: inline:</h2>
+<p class="ex2">
+  <span>Text 1</span>
+  <span>Text 2</span>
+  <span>Text 3</span>
+</p>
+
+<h2>display: block:</h2>
+<p class="ex3">
+  <span>Text 1</span>
+  <span>Text 2</span>
+  <span>Text 3</span>
+</p>
+
+<h2>display: inline-block:</h2>
+<p class="ex4">
+  <span>Text 1</span>
+  <span>Text 2</span>
+  <span>Text 3</span>
+</p>
+
+<h2>display: flex:</h2>
+<p class="ex5">
+  <span>Text 1</span>
+  <span>Text 2</span>
+  <span>Text 3</span>
+</p>
+
+<h2>display: grid:</h2>
+<p class="ex6">
+  <span>Text 1</span>
+  <span>Text 2</span>
+  <span>Text 3</span>
+</p>
 
 </body>
 </html>
