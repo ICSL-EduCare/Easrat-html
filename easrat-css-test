@@ -3,11 +3,17 @@
 <head>
 <style>
 body {
-  .p{font-family: "Times New Roman", Times, serif;
+  .p{
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
   }
-  .h1{font-family: Georgia, serif;
+  .h1{
+    font-style: italic;
+    font-family: Georgia, serif;
   }
-  .h6{font-family: "Courier New", Courier, monospace;
+  .h6{
+    font-style: oblique;
+    font-family: "Courier New", Courier, monospace;
   }
 
 }
