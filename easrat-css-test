@@ -8,6 +8,9 @@ table, td, th {
 td {
     text-align: center;
 }
+tr{
+  tr:hover {background-color: coral;}
+}
 table {
   border-collapse: collapse;
   width: 100%;
