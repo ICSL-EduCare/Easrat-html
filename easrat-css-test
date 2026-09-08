@@ -15,13 +15,18 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   background-color: #333333;
-  display: flex;
+}
+
+ul li {
+  float: left;
 }
 
 ul li a {
   display: block;
   color: white;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -40,7 +45,7 @@ ul li a:hover {
   <li><a href="#about">About</a></li>
 </ul>
 
-<h2>Horizontal Navbar Using Flex</h2>
+<h2>Horizontal Navbar Using Float</h2>
 
 <p>Some text on the website.</p>
 
