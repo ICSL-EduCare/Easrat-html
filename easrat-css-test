@@ -1,20 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
 body {
-  .p{
-    font-size: 16px;
-    font-family: "Times New Roman", Times, serif;
-  }
-  .h1{
-    font-size: 40px;
-    font-family: Georgia, serif;
-  }
-  .h6{
-    font-size: 20px;
-    font-family: "Courier New", Courier, monospace;
-  }
+    font-family: "Sofia", sans-serif;
 
 }
 </style>
