@@ -4,15 +4,15 @@
 <style>
 body {
   .p{
-    font-style: normal;
+    font-weight: lighter;
     font-family: "Times New Roman", Times, serif;
   }
   .h1{
-    font-style: italic;
+    font-weight: bold;
     font-family: Georgia, serif;
   }
   .h6{
-    font-style: oblique;
+    font-weight: 900;
     font-family: "Courier New", Courier, monospace;
   }
 
