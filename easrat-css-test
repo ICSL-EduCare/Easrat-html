@@ -2,69 +2,22 @@
 <html>
 <head>
 <style>
-p {
-  background-color: blue;
-  padding: 10px;
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
 }
-
-span {
-  background-color: red;
-  color: white;
-  padding: 10px;
-}
-
-p.ex1 {display: none;}
-p.ex2 {display: inline;}
-p.ex3 {display: block;}
-p.ex4 {display: inline-block;}
-p.ex5 {display: flex;}
-p.ex6 {display: grid;}
 </style>
 </head>
 <body>
-<h1>The display Property</h1>
 
-<h2>display: none:</h2>
-<p class="ex1">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
+<h2>Using position: relative;</h2>
 
-<h2>display: inline:</h2>
-<p class="ex2">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
+<p>An element with position: relative; is positioned relative to its normal position:</p>
 
-<h2>display: block:</h2>
-<p class="ex3">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
-
-<h2>display: inline-block:</h2>
-<p class="ex4">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
-
-<h2>display: flex:</h2>
-<p class="ex5">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
-
-<h2>display: grid:</h2>
-<p class="ex6">
-  <span>Text 1</span>
-  <span>Text 2</span>
-  <span>Text 3</span>
-</p>
+<div class="relative">
+This div element has position: relative;
+</div>
 
 </body>
 </html>
