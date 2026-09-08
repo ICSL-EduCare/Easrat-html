@@ -2,63 +2,45 @@
 <html>
 <head>
 <style>
-ul.a {list-style-type: circle;}
-ul.b {list-style-type: disc;}
-ul.c {list-style-type: square;}
+ol {
+  background: salmon;
+  padding: 20px;
+}
 
-ol.d {list-style-type: upper-roman;}
-ol.e {list-style-type: lower-roman;}
-ol.f {list-style-type: lower-alpha;}
-ol.g {list-style-type: decimal;}
+ol li {
+  background: mistyrose;
+  color: darkred;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+ul {
+  background: powderblue;
+  padding: 20px;
+}
+
+ul li {
+  background: mistyrose;
+  color: darkblue;
+  margin: 5px;
+}
 </style>
 </head>
 <body>
 
-<h2>The list-style-type Property</h2>
+<h1>Styling Lists With Colors, Margins and Padding</h1>
 
-<p>Example of unordered lists:</p>
-<ul class="a">
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ul>
   <li>Coffee</li>
   <li>Tea</li>
   <li>Coca Cola</li>
 </ul>
-
-<ul class="b">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Coca Cola</li>
-</ul>
-
-<ul class="c">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Coca Cola</li>
-</ul>
-
-<p>Example of ordered lists:</p>
-<ol class="d">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Coca Cola</li>
-</ol>
-
-<ol class="e">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Coca Cola</li>
-</ol>
-
-<ol class="f">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Coca Cola</li>
-</ol>
-
-<ol class="g">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Coca Cola</li>
-</ol>
 
 </body>
 </html>
