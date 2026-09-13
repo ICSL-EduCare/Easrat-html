@@ -2,26 +2,25 @@
 <html>
 <head>
 <style> 
-input[type=text] {
+select {
   width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
+  padding: 16px;
+  border: none;
   border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('searchicon.png');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
+  background-color: #f1f1f1;
 }
 </style>
 </head>
 <body>
 
-<h2>Input field with an icon inside</h2>
+<h2>Styling a Dropdown Menu</h2>
 
 <form>
-  <input type="text" name="search" placeholder="Search..">
+  <select id="country" name="country">
+  <option value="au">Australia</option>
+  <option value="ca">Canada</option>
+  <option value="usa">USA</option>
+  </select>
 </form>
 
 </body>
